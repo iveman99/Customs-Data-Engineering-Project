@@ -260,4 +260,10 @@ File: `powerbi/dashboards/shipments_dashboard.pbix`
 | Analytics     | Jupyter Notebook |
 
 ---
---
+👤 Author
+Veman S Chippa
+
+A data enthusiast who believes that data doesn’t just talk —
+👉 “Data speaks… if you know how to listen.”
+
+🔗 Portfolio: https://iveman.vercel.app/
