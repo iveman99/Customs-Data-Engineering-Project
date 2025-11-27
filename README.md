@@ -109,14 +109,8 @@ Created a complete **Operational Shipments Dashboard**:
 ✔ Slicer Panel (PORT, IEC, Status, EGM, Gateway)
 ✔ Total KPI Cards (SB, IEC, PORT, Gateway, EGM)
 
-📁 *Dashboard file:*
-`/powerbi/dashboards/shipments_dashboard.pbix`
+<img width="1029" height="744" alt="image" src="https://github.com/user-attachments/assets/3091316d-4032-4925-893d-8c6899d42c87" />
 
-📸 *Screenshots:*
-`/powerbi/snapshots/`
-
-📄 *PDF export:*
-`/powerbi/pdf/`
 
 ---
 
@@ -134,11 +128,10 @@ Created **4 relational tables**:
 ✔ Wrote analytical SQL queries
 ✔ Generated ERD diagram
 
-📁 *SQL Schema:*
-`/database/schema/`
 
-📁 *ERD Diagram:*
-`/database/erd/`
+<img width="1021" height="547" alt="image" src="https://github.com/user-attachments/assets/bb943e57-6084-4255-b4c2-69a1e0fd2275" />
+<img width="1012" height="515" alt="image" src="https://github.com/user-attachments/assets/8974ac68-4d81-4bfb-90d5-5480af8e93d4" />
+
 
 ---
 
@@ -156,12 +149,10 @@ You built a container that:
 docker build -t shipments-cleaner .
 docker run --rm -v "${PWD}/data:/data" -v "${PWD}/output:/output" shipments-cleaner
 ```
+<img width="1024" height="723" alt="image" src="https://github.com/user-attachments/assets/f8c25572-b4c4-491a-b7b0-618afdbfb571" />
+<img width="1039" height="188" alt="image" src="https://github.com/user-attachments/assets/8b446140-4bd7-4167-b2cf-1873f23469cb" />
 
-📁 Files:
 
-* `docker/Dockerfile`
-* `docker/process_data.py`
-* `docker/output/cleaned_shipments.csv`
 
 ---
 
@@ -173,12 +164,9 @@ You automated scraping of **Wikipedia – List of countries by population**.
 ✔ Converted to structured rows/columns
 ✔ Saved output CSV
 ✔ Captured screenshots
+<img width="1031" height="612" alt="image" src="https://github.com/user-attachments/assets/12995a1f-4f32-45f1-ad6f-a16d6d83a0c1" />
+<img width="1023" height="591" alt="image" src="https://github.com/user-attachments/assets/fc41c6a7-aa68-4763-a67e-bda7bfe8c28f" />
 
-📁 Files:
-
-* `/selenium/selenium_scraper.py`
-* `/selenium/scraped_wikipedia_population.csv`
-* `/selenium/screenshots/`
 
 ---
 
@@ -191,12 +179,9 @@ A complete cleaning script in Jupyter Notebook containing:
 ✔ Column transformations
 ✔ Grouping, filtering
 ✔ Final exported CSV
+<img width="982" height="883" alt="image" src="https://github.com/user-attachments/assets/f63c0f60-79c6-49c9-9d90-ee211f49b22e" />
 
-📁 Notebook:
-`/python/data_cleaning_final.ipynb`
-
-📁 Output CSV:
-`/python/cleaned_population_data.csv`
+<img width="1011" height="749" alt="image" src="https://github.com/user-attachments/assets/fd476a72-2bf9-4ab0-967e-d9f3fdd2b2c2" />
 
 ---
 
