@@ -93,8 +93,8 @@ project-root/
 ✔ Combined worksheets
 ✔ Prepared final cleaned Excel for Power BI
 
-📸 *Snapshots are stored inside:*
-`/excel/Snapshots/`
+<img width="985" height="535" alt="image" src="https://github.com/user-attachments/assets/b2e5f345-44bb-4dea-b22b-8102caef99fc" />
+
 
 ---
 
