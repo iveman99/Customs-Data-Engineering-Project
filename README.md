@@ -1,247 +1,263 @@
-# 🚢 Customs Data Engineering Project  
-### A Complete End-to-End Data Engineering Workflow  
-**By: Vemansh Srinivas Chippa**
+# 🚢 **END-to-END Shipments & Compliance Automation Project**
 
-![Project Banner](powerbi/snapshots/dashboard_overview.png)
+### 🔍 **Data Cleaning | Power BI Dashboard | SQL DBMS | Docker | Selenium Web Scraping | Python Analytics**
 
 ---
 
-## 📌 Project Overview  
-This project is a complete **Data Engineering pipeline** built using:
+## 📌 **Project Overview**
 
-- Excel (Pivot Tables & Complex Transformations)  
-- Power BI (Interactive Dashboard)  
-- SQL (Relational Database + Queries)  
-- Docker (Containerized Processing Pipeline)  
-- Selenium (Web Scraping Automation)  
-- Python (Data Cleaning + Transformations)
+This project is a complete **end-to-end data engineering + analytics pipeline**, built using:
 
-It demonstrates the **end-to-end lifecycle** of handling customs shipment operational data.
+* **Excel** for data extraction & sorting
+* **Power BI** for dashboard insights
+* **MySQL DBMS** for structured storage
+* **Python** for cleaning & automation
+* **Docker** to containerize the pipeline
+* **Selenium** for web scraping
+* **Jupyter Notebook** for data analysis
+
+The goal is to take a **raw shipments dataset** and turn it into:
+✔ Clean structured data
+✔ Automated pipelines
+✔ Interactive dashboards
+✔ A reproducible container environment
+✔ A web-scraped structured CSV
+✔ A final cleaned dataset for analysis
+
+This project showcases a **complete real-world workflow** used in:
+📦 Logistics,
+💼 Compliance,
+📊 Data Analysis,
+🖥 Automation, and
+☁ Data Engineering.
 
 ---
 
-## 🏗️ Architecture
+## 🗂 **Repository Structure**
 
-Raw Excel → Cleaning (Python) → Processed CSV → SQL DB
-→ Power BI Dashboard → Selenium Web Scraping → Docker Automation
-
-
----
-
-## 📁 Repository Structure
-
-Customs-Data-Engineering-Project/
+```
+project-root/
 │
 ├── data/
-├── excel/
-├── powerbi/
+│   └── raw/
+│       └── input.xlsx
+│
 ├── database/
+│   ├── erd/
+│   └── schema/
+│
 ├── docker/
+│   ├── Dockerfile
+│   ├── output/
+│   └── process_data.py
+│
+├── excel/
+│   ├── Combined excel worksheets/
+│   └── Snapshots/
+│
+├── powerbi/
+│   ├── dashboards/
+│   ├── pdf/
+│   └── snapshots/
+│
+├── python/
+│   ├── screenshots/
+│   ├── cleaned_population_data.csv
+│   └── data_cleaning_final.ipynb
+│
 ├── selenium/
-└── python/
-
-
-Each folder contains code, snapshots, outputs and scripts for the corresponding task.
-
----
-
-# ✅ Task 1 — Pivot Tables (Excel)
-
-### ✔ Features
-- Multi-level grouped pivot tables  
-- Port → Status → Count  
-- Gateway → EGM → Count  
-- Subtotals + Grand totals  
-- Clean formatting
-
-📸 **Screenshots to add:**  
-- excel/pivot_tables/pivot_summaries.png  
-- excel/computed_fields/computed_fields_screenshot.png  
+│   ├── screenshots/
+│   ├── scraped_wikipedia_population.csv
+│   └── selenium_scraper.py
+│
+└── README.md
+```
 
 ---
 
-# ✅ Task 2 — Power BI Dashboard
+## 📘 **1. Excel Processing & Data Cleaning**
 
-### ✔ Dashboard Contains:
-- **5 KPI Cards**  
-- **5 Slicers**  
-- **Status Matrix**  
-- **PORT Chart**  
-- **GST State Code Chart**  
-- **Status Pie Chart**  
-- **Summary Section**
+**Tasks completed:**
 
-📸 **Screenshots to add:**
+✔ Removed duplicates
+✔ Cleaned inconsistent fields
+✔ Created 5 computed fields:
 
----
+* `Clean_Status`
+* `EGM_Flag`
+* `ROSL_Flag`
+* `Gateway_Flag`
+* `GST_StateCode`
 
-# ✅ Task 3 — Complex Excel Formulas
+✔ Performed **multi-level sorting**
+✔ Combined worksheets
+✔ Prepared final cleaned Excel for Power BI
 
-### ✔ 5 Computed Fields:
-1. Clean_Status  
-2. EGM_Flag  
-3. ROSL_Flag  
-4. Gateway_Flag  
-5. Date_Extract / IEC Extracted  
-
-📸 Screenshot:  
-excel/computed_fields/computed_fields_screenshot.png
+📸 *Snapshots are stored inside:*
+`/excel/Snapshots/`
 
 ---
 
-# ✅ Task 4 — SQL Database (Mini DBMS)
+## 📊 **2. Power BI Dashboard**
 
-### ✔ 4 Tables Created:
-- shipment_info  
-- exporter_details  
-- compliance_details  
-- status_details  
+Created a complete **Operational Shipments Dashboard**:
 
-### ✔ Included:
-- Primary Keys  
-- Foreign Keys  
-- Indexes  
-- Sample Inserts  
-- Working Queries  
+✔ CleanStatus Pie Chart
+✔ GST State Breakdown
+✔ PORT-wise SB Count
+✔ Gateway vs Status Matrix
+✔ Slicer Panel (PORT, IEC, Status, EGM, Gateway)
+✔ Total KPI Cards (SB, IEC, PORT, Gateway, EGM)
 
-📸 Screenshots:
+📁 *Dashboard file:*
+`/powerbi/dashboards/shipments_dashboard.pbix`
 
+📸 *Screenshots:*
+`/powerbi/snapshots/`
 
----
-
-# ✅ Task 5 — Data Sorting (Excel)
-
-### ✔ Two Sorted Versions:
-- Sort by PORT → Clean_Status → SB Date  
-- Sort by GST → IEC → Gateway  
-
-📸 Screenshots:
-
+📄 *PDF export:*
+`/powerbi/pdf/`
 
 ---
 
-# ✅ Task 6 — Docker Automation Pipeline
+## 🛢 **3. SQL DBMS (MySQL)**
 
-### ✔ Included:
-- Dockerfile  
-- Python script that:
-  - Reads Excel  
-  - Cleans dataset  
-  - Saves cleaned CSV  
-- Bind mounted volumes  
-- Successful run proof
+Created **4 relational tables**:
 
-📸 Required screenshots:
+* `shipment_info`
+* `exporter_details`
+* `compliance_details`
+* `status_details`
 
+✔ Added foreign keys
+✔ Inserted sample rows
+✔ Wrote analytical SQL queries
+✔ Generated ERD diagram
 
----
+📁 *SQL Schema:*
+`/database/schema/`
 
-# ✅ Task 7 — Selenium Web Scraper
-
-### ✔ Accomplishes:
-- Opens Wikipedia page  
-- Scrapes population data table  
-- Converts to rows and columns  
-- Saves CSV  
-- Works fully in Jupyter Notebook  
-
-📸 Screenshot:
-
+📁 *ERD Diagram:*
+`/database/erd/`
 
 ---
 
-# ✅ Task 8–9 — Python Data Cleaning
+## 🐳 **4. Docker Containerization**
 
-### ✔ Performed:
-- Duplicate removal  
-- Date formatting  
-- Conditional flags  
-- Grouping  
-- Exporting final cleaned dataset  
+You built a container that:
+✔ Installs Python dependencies
+✔ Mounts input/output volumes
+✔ Runs `process_data.py`
+✔ Produces `/output/cleaned_shipments.csv`
 
-📸 Screenshots:
+### **Run Instructions:**
 
-
----
-
-## 📦 How to Run (Instructions)
-
-### 🐋 Docker
 ```bash
 docker build -t shipments-cleaner .
 docker run --rm -v "${PWD}/data:/data" -v "${PWD}/output:/output" shipments-cleaner
+```
 
+📁 Files:
 
-pip install -r requirements.txt
-python process_data.py
+* `docker/Dockerfile`
+* `docker/process_data.py`
+* `docker/output/cleaned_shipments.csv`
 
-python selenium_scraper.py
+---
 
-📚 Conclusion
+## 🌐 **5. Selenium Web Scraping**
 
-This repo demonstrates a complete data engineering lifecycle, from raw data → automation → visualization → database → containerization → web scraping.
+You automated scraping of **Wikipedia – List of countries by population**.
 
-Perfect for:
-✔ College project
-✔ Portfolio
-✔ Interview showcase
+✔ Extracted tabular data
+✔ Converted to structured rows/columns
+✔ Saved output CSV
+✔ Captured screenshots
 
-⭐ Author
+📁 Files:
 
-Vemansh Srinivas Chippa
-📧 info.veman99@gmail.com
+* `/selenium/selenium_scraper.py`
+* `/selenium/scraped_wikipedia_population.csv`
+* `/selenium/screenshots/`
 
-🔗 https://www.linkedin.com/in/veman-chippa/
+---
 
+## 🐍 **6. Python Data Manipulation**
 
+A complete cleaning script in Jupyter Notebook containing:
 
-Project Name: Export Shipments Analysis — End-to-End Data Engineering Project
-Author: Veman S Chippa
-Year: 2025
-----------------------------------------------------------
+✔ Data type corrections
+✔ Text trimming
+✔ Column transformations
+✔ Grouping, filtering
+✔ Final exported CSV
 
-├── data
-│   └── raw
-│       └── shipments_raw.xlsx             # Original dataset
-│
-├── database
-│   ├── erd
-│   │   └── erd_diagram.png               # ERD diagram created
-│   └── schema
-│       └── database_schema.sql           # SQL table creation scripts
-│
-├── docker
-│   ├── Dockerfile                        # Container setup for Python automation
-│   ├── process_data.py                   # Automated data cleaning script
-│   └── output
-│       └── cleaned_shipments.csv         # Output produced from running Docker
-│
-├── excel
-│   ├── Combined excel worksheets         # All combined & sorted Excel sheets
-│   └── Snapshots
-│       └── sorting_screenshots.png       # Sorting proof
-│
-├── powerbi
-│   ├── dashboards
-│   │   └── shipments_dashboard.pbix       # Final BI dashboard
-│   ├── pdf
-│   │   └── dashboard_export.pdf           # Static view for submission
-│   └── snapshots
-│       ├── slicers.png
-│       ├── charts.png
-│       └── final_dashboard.png
-│
-├── python
-│   ├── screenshots
-│   │   └── python_cleaning_output.png
-│   ├── cleaned_population_data.csv       # Cleaned dataset from Jupyter
-│   └── data_cleaning_final.ipynb         # Notebook used for Python cleaning
-│
-├── selenium
-│   ├── screenshots
-│   │   └── selenium_output.png           # Browser automation proof
-│   ├── scraped_wikipedia_population.csv  # Extracted data
-│   └── selenium_scraper.py               # Script using Selenium
-│
-└── README.md                             # Full project documentation
+📁 Notebook:
+`/python/data_cleaning_final.ipynb`
 
+📁 Output CSV:
+`/python/cleaned_population_data.csv`
+
+---
+
+## 🧩 **7. Final Deliverables**
+
+Your project contains all required outputs:
+
+### ✔ Excel cleaning
+
+### ✔ Power BI Dashboard
+
+### ✔ SQL DBMS + ERD
+
+### ✔ Docker container
+
+### ✔ Selenium script + CSV
+
+### ✔ Python notebook
+
+### ✔ GitHub repository
+
+### ✔ Professional README.md (this file)
+
+---
+
+## 🧪 **How to Run the Project**
+
+### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/<your-username>/shipment-project.git
+cd shipment-project
+```
+
+### **2. Run Docker Pipeline**
+
+```bash
+docker build -t shipments-cleaner .
+docker run --rm -v "${PWD}/data:/data" -v "${PWD}/output:/output" shipments-cleaner
+```
+
+### **3. Run Selenium Scraper**
+
+```bash
+python selenium/selenium_scraper.py
+```
+
+### **4. Open Power BI Dashboard**
+
+File: `powerbi/dashboards/shipments_dashboard.pbix`
+
+## ⭐ **Technologies Used**
+
+| Category      | Tools            |
+| ------------- | ---------------- |
+| Data Cleaning | Excel, Python    |
+| Visualization | Power BI         |
+| Database      | MySQL            |
+| Automation    | Docker           |
+| Web Scraping  | Selenium         |
+| Analytics     | Jupyter Notebook |
+
+---
+--
