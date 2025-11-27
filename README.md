@@ -192,3 +192,56 @@ Vemansh Srinivas Chippa
 📧 info.veman99@gmail.com
 
 🔗 https://www.linkedin.com/in/veman-chippa/
+
+
+
+Project Name: Export Shipments Analysis — End-to-End Data Engineering Project
+Author: Veman S Chippa
+Year: 2025
+----------------------------------------------------------
+
+├── data
+│   └── raw
+│       └── shipments_raw.xlsx             # Original dataset
+│
+├── database
+│   ├── erd
+│   │   └── erd_diagram.png               # ERD diagram created
+│   └── schema
+│       └── database_schema.sql           # SQL table creation scripts
+│
+├── docker
+│   ├── Dockerfile                        # Container setup for Python automation
+│   ├── process_data.py                   # Automated data cleaning script
+│   └── output
+│       └── cleaned_shipments.csv         # Output produced from running Docker
+│
+├── excel
+│   ├── Combined excel worksheets         # All combined & sorted Excel sheets
+│   └── Snapshots
+│       └── sorting_screenshots.png       # Sorting proof
+│
+├── powerbi
+│   ├── dashboards
+│   │   └── shipments_dashboard.pbix       # Final BI dashboard
+│   ├── pdf
+│   │   └── dashboard_export.pdf           # Static view for submission
+│   └── snapshots
+│       ├── slicers.png
+│       ├── charts.png
+│       └── final_dashboard.png
+│
+├── python
+│   ├── screenshots
+│   │   └── python_cleaning_output.png
+│   ├── cleaned_population_data.csv       # Cleaned dataset from Jupyter
+│   └── data_cleaning_final.ipynb         # Notebook used for Python cleaning
+│
+├── selenium
+│   ├── screenshots
+│   │   └── selenium_output.png           # Browser automation proof
+│   ├── scraped_wikipedia_population.csv  # Extracted data
+│   └── selenium_scraper.py               # Script using Selenium
+│
+└── README.md                             # Full project documentation
+
